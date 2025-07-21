@@ -1,0 +1,64 @@
+/*Background Color */
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+/*Line Color */
+h1 {
+    color: red;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999L;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #222;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Dropdown content box */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Show the dropdown */
+.dropdown-content.show {
+  display: block;
+}
+
+/* Dropdown buttons */
+.dropdown-content button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content button:hover {
+  background-color: #333;
+}
