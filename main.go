@@ -8,7 +8,6 @@ import (
 func main() {
 	// Serve static files (CSS, images, etc.)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
-	http.Handle("/cv/", http.StripPrefix("/cv/", http.FileServer(http.Dir("cv"))))
 
 	// Serve HTML files dynamically
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
