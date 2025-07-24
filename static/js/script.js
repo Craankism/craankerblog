@@ -1,15 +1,15 @@
 //home
 document.getElementById("home").onclick = function () {
-    window.location.href = "index.html";
+    window.location.href = "/";
 }
 //aboutMe
 document.getElementById("aboutMe").onclick = function () {
-    window.location.href = "aboutMe/index.html";
+    window.location.href = "aboutMe";
 };
 //projects subMenu
 //myPage
 document.getElementById("myPage").onclick = function () {
-    window.location.href = "projects/myPage/index.html"
+    window.location.href = "projects/myPage"
 }
 
 //dropdownMenu
