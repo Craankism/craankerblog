@@ -1,6 +1,6 @@
 //home
 document.getElementById("home").onclick = function () {
-    window.location.href = "/craankersite/home";
+    window.location.href = "/craankersite";
 }
 //aboutMe
 document.getElementById("aboutMe").onclick = function () {
