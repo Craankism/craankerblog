@@ -1,16 +1,16 @@
 //home
 document.getElementById("home").onclick = function () {
-    window.location.href = "/home";
+    window.location.href = "/craankersite/home";
 }
 //aboutMe
 document.getElementById("aboutMe").onclick = function () {
-    window.location.href = "/aboutMe";
+    window.location.href = "/craankersite/aboutMe";
 };
 //projects subMenu
 //myPage
 document.getElementById("myPage").onclick = function () {
-    window.location.href = "/projects/myPage"
-}
+    window.location.href = "/craankersite/projects/myPage"
+};
 
 //dropdownMenu
 function toggleDropdown() {
