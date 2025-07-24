@@ -2,7 +2,6 @@ package main
 
 import (
 	"net/http"
-	"os"
 )
 
 func main() {
@@ -11,20 +10,13 @@ func main() {
 
 	// Serve HTML files dynamically
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		path := r.URL.Path
-		if path == "/" {
-			path = "index.html"
-		} else {
-			path = path[1:] // e.g. "/cv.html" becomes "cv.html"
-		}
-
-		// Check if the file exists
-		if _, err := os.Stat(path); os.IsNotExist(err) {
-			http.NotFound(w, r)
-			return
-		}
-
-		http.ServeFile(w, r, path)
+		http.ServeFile(w, r, "index.html")
+	})
+	http.HandleFunc("/aboutMe/", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "aboutMe")
+	})
+	http.HandleFunc("/projects/myPage/", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "projects/myPage")
 	})
 
 	http.ListenAndServe(":8080", nil)
