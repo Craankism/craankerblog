@@ -1,10 +1,14 @@
 /*Background Color */
-body{
+body {
+    background-color: #222;
+}
+.centering{
     background-color: black;
     color: white;
     text-align: center;
     padding: 2rem;
 }
+
 /*Headline */
 h1 {
     color: red;
@@ -12,10 +16,26 @@ h1 {
 h2 {
     color: #fcfcfc;
     font-size: 18px;
+    width: 80ch;
+    word-break: break-word;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul>li {
+    color: #fcfcfc;
+    font-size: 24px;
     width: 100ch;
     word-break: break-word;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+}
+pre {
+    color: #fcfcfc;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 /* Container for vertical images */

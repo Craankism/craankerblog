@@ -4,12 +4,12 @@ document.getElementById("home").onclick = function () {
 }
 //aboutMe
 document.getElementById("aboutMe").onclick = function () {
-    window.location.href = "/craankersite/aboutMe";
+    window.location.href = "/craankersite/about-me";
 };
 //projects subMenu
-//myPage
-document.getElementById("myPage").onclick = function () {
-    window.location.href = "/craankersite/projects/myPage"
+//staticWebsite
+document.getElementById("staticWebsite").onclick = function () {
+    window.location.href = "/craankersite/projects/static-website"
 };
 
 //dropdownMenu

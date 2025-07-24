@@ -6,17 +6,17 @@ import (
 
 func main() {
 	// Serve static files (CSS, images, etc.)
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
-
+	http.Handle("/craankersite/static/", http.StripPrefix("/craankersite/static/", http.FileServer(http.Dir("static"))))
+	
 	// Serve HTML files dynamically
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/craankersite/", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "index.html")
 	})
-	http.HandleFunc("/aboutMe/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "aboutMe")
+	http.HandleFunc("/craankersite/about-me/", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "about-me")
 	})
-	http.HandleFunc("/projects/myPage/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "projects/myPage")
+	http.HandleFunc("/craankersite/projects/static-website/", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "projects/static-website")
 	})
 
 	http.ListenAndServe(":8080", nil)
