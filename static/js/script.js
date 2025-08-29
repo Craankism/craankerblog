@@ -11,6 +11,10 @@ document.getElementById("aboutMe").onclick = function () {
 document.getElementById("myPage").onclick = function () {
     window.location.href = "/projects/myPage/index.html"
 }
+//sorter
+document.getElementById("sorter").onclick = function () {
+    window.location.href = "/projects/sorter/index.html"
+}
 
 //dropdownMenu
 function toggleDropdown() {
