@@ -1,12 +1,13 @@
 //home
 document.getElementById("home").onclick = function () {
-    window.location.href = "/index.html";
+    window.location.href = "/craankersite";
 }
 //aboutMe
 document.getElementById("aboutMe").onclick = function () {
-    window.location.href = "/aboutMe/index.html";
+    window.location.href = "/craankersite/about-me";
 };
 //projects subMenu
+<<<<<<< HEAD
 //myPage
 document.getElementById("myPage").onclick = function () {
     window.location.href = "/projects/myPage/index.html"
@@ -15,6 +16,12 @@ document.getElementById("myPage").onclick = function () {
 document.getElementById("sorter").onclick = function () {
     window.location.href = "/projects/sorter/index.html"
 }
+=======
+//staticWebsite
+document.getElementById("staticWebsite").onclick = function () {
+    window.location.href = "/craankersite/projects/static-website"
+};
+>>>>>>> 63b8800424a173b41420d61fac6f788b26aaaffc
 
 //dropdownMenu
 function toggleDropdown() {

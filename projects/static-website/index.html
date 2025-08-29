@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>myPage</title>
+  <link rel="stylesheet" href="../../static/style.css">
+  <script src="../../static/js/script.js" defer></script>
+</head>
+<body>
+
+  <div class="centering"><h1>Static Website</h1>
+  <h1>
+    <a href="//github.com/Craankism/craankersite">https://github.com/Craankism/craankersite</a><br>
+    <a href="//craankism.github.io/craankersite">https://craankism.github.io/craankersite</a>
+  </h1>
+    <ul>
+    <li>used languages: HTML, CSS, JavaScript, Go</li>
+    <li>used tools: Visual Studio Code, Git, GitHub</li>
+    <li>learned: how to create a static website, how to use Go for serving files, how to structure a simple web project, how to implement a dropdown menu</li>
+    </ul>
+  </div>
+<pre><code class="language-html">
+&lt;!-- dropdown_menu --&gt;
+  &lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;dropbtn&quot; onclick=&quot;toggleDropdown()&quot;&gt;Menu ▼&lt;/button&gt;
+    &lt;div id=&quot;dropdownMenu&quot; class=&quot;dropdown-content&quot;&gt;
+        &lt;button id=&quot;home&quot;&gt;Home&lt;/button&gt;
+        &lt;button id=&quot;aboutMe&quot;&gt;About me&lt;/button&gt;
+
+          &lt;div class=&quot;submenu&quot;&gt;
+            &lt;button class=&quot;submenuDropdown&quot; onclick=&quot;toggleSubmenu(event)&quot;&gt;Projects ▼&lt;/button&gt;
+            &lt;div id=&quot;submenuDropdown&quot; class=&quot;submenu-content dropdown-content&quot;&gt;
+                &lt;button id=&quot;staticWebsite&quot;&gt;Static Website&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;  
+</code></pre>
+
+
+
+<!-- dropdown_menu -->
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown()">Menu ▼</button>
+    <div id="dropdownMenu" class="dropdown-content">
+        <button id="home">Home</button>
+        <button id="aboutMe">About me</button>
+
+          <div class="submenu">
+            <button class="submenuDropdown" onclick="toggleSubmenu(event)">Projects ▼</button>
+            <div id="submenuDropdown" class="submenu-content dropdown-content">
+                <button id="staticWebsite">Static Website</button>
+            </div>
+          </div>
+    </div>
+  </div>  
+
+</body>
+</html>
